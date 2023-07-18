@@ -41,3 +41,12 @@
     font-size: 0.9rem;
   }
 }
+
+/* Online gaming media queries */
+@media screen and (max-width: 576px) {
+  .videos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
+    margin: 0rem;
+  }
+}
