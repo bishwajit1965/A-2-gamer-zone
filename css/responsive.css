@@ -1,0 +1,16 @@
+/* Navigation media queries */
+@media screen and (max-width: 576px) {
+  .navigation {
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .nav-links ul li {
+    margin: 0.8rem;
+  }
+  .link-div {
+    display: block;
+  }
+}
