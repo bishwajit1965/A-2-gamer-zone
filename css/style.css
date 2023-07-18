@@ -1,0 +1,93 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@1,800&display=swap");
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Colors */
+* {
+  --primary-color: #ff42a5;
+  --secondary-color: #4ec5f7;
+  --decorated-text-color: #ff42a5;
+  --hover-primary: #c10566;
+  --hover-secondary: #0681b6;
+  --career-background-color: #ff42a5;
+  --footer-background-color: #0b0223;
+}
+
+/* Shared styles
+==============================*/
+/* buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: var(--hover-primary);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+.btn-secondary:hover {
+  background-color: var(--hover-secondary);
+}
+
+/* Texts */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.section-description {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Header section styles begin
+=============================== */
+/* Navigation styles begin */
+.navigation{
+
+}
+
+/* Banner styles begin */
+.banner{
+
+}
+
+
+/* Main section styles begin
+=============================== */
+/* Gamer section styles begin */
+
+
+/* Online games section styles begin */
+
+
+/* Play instantly section styles begin */
+
+
+/*  Play games online section styles begin */
+
+
+/* Careers section styles begin */
+
+
+/* Gaming category links section styles begin */
+
+
+
+/* Footer section styles begin
+=============================== */
