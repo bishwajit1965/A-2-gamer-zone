@@ -13,4 +13,31 @@
   .link-div {
     display: block;
   }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-text,
+  .banner-image,
+  .banner-image img {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gamer {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .gamer-text,
+  .gamer-image {
+    text-align: center;
+    width: 100%;
+  }
+  .semi-large-font-title {
+    font-size: 1.5rem;
+  }
+  .description-text {
+    font-size: 0.9rem;
+  }
 }

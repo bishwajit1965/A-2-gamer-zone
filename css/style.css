@@ -24,6 +24,7 @@ body {
   --hover-secondary: #0681b6;
   --career-background-color: #ff42a5;
   --footer-background-color: #0b0223;
+  --gray-color: #534c64;
 }
 
 /* Shared styles
@@ -31,28 +32,85 @@ body {
 /* buttons */
 .btn-primary {
   background-color: var(--primary-color);
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 105rem;
+  padding: 0.9rem 1.6rem;
 }
 .btn-primary:hover {
   background-color: var(--hover-primary);
 }
 .btn-secondary {
   background-color: var(--secondary-color);
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 105rem;
+  padding: 0.9rem 1.6rem;
 }
 .btn-secondary:hover {
   background-color: var(--hover-secondary);
 }
 
 /* Texts */
+.decorated-gradient-tile {
+  text-transform: uppercase;
+  background-image: linear-gradient(#d94dc5, #a754df);
+  background: -webkit-linear-gradient(to bottom, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.large-font-title {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.semi-large-font-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
 .section-title {
   font-size: 1.5rem;
   font-weight: 800;
 }
 .section-description {
   font-size: 0.8rem;
-  color: #ddd;
+  color: var(--gray-color);
+  margin: 0.5rem 0rem;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  color: var(--gray-color);
+  margin: 1rem 0rem;
 }
 .text-center {
   text-align: center;
+}
+.uppercase-large {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.uppercase-normal {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.capitalize-text {
+  text-transform: capitalize;
+}
+.small-text {
+  font-size: 0.8rem;
+  margin: 0.5rem 0rem;
+  color: var(--gray-color);
+}
+.hide {
+  display: none;
 }
 
 /* Header section styles begin
@@ -106,20 +164,85 @@ body {
 .nav-link-fas {
   padding: 0rem 0.5rem;
 }
-.fa-youtube-play {
+.fa-red {
   color: red;
 }
 
 /* Banner styles begin */
 .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.fa-circle {
+  font-size: 12px;
+}
+.banner-text {
+  width: 50%;
+  padding: 4rem 10rem 4rem 15rem;
+}
+
+.banner-image {
+  width: 50%;
+}
+.banner-text {
+  width: 50%;
+  background-image: url("../images/Group 14.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  height: auto;
+}
+.banner-image img {
+  width: 64%;
+  object-fit: cover;
+  background-position: center;
+  height: 100%;
+}
+.buttons {
+  margin-top: 1.5rem;
 }
 
 /* Main section styles begin
 =============================== */
 /* Gamer section styles begin */
+.gamer {
+  background-color: #fff9fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem 15rem;
+}
+.gamer-text,
+.gamer-image {
+  width: 50%;
+}
+.gamer-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.gamer-text {
+  text-align: right;
+}
 
 /* Online games section styles begin */
-
+.online-games {
+  margin-top: 5rem;
+}
+.videos {
+  margin: 1.5rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+.video-box img {
+  width: 100%;
+  object-fit: cover;
+}
 /* Play instantly section styles begin */
 
 /*  Play games online section styles begin */
