@@ -17,6 +17,7 @@ body {
 
 /* Colors */
 * {
+  --bg-white-color: #fff;
   --primary-color: #ff42a5;
   --secondary-color: #4ec5f7;
   --decorated-text-color: #ff42a5;
@@ -38,7 +39,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   border-radius: 105rem;
-  padding: 0.9rem 1.6rem;
+  padding: 0.7rem 1.3rem;
 }
 .btn-primary:hover {
   background-color: var(--hover-primary);
@@ -51,17 +52,40 @@ body {
   text-transform: uppercase;
   color: #fff;
   border-radius: 105rem;
-  padding: 0.9rem 1.6rem;
+  padding: 0.7rem 1.3rem;
 }
 .btn-secondary:hover {
   background-color: var(--hover-secondary);
 }
 
+.btn-white {
+  background-color: var(--bg-white-color);
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.3rem;
+  color: var(--primary-color);
+  margin: 1rem 0rem;
+}
+
+.btn-white:hover {
+  background-color: var(--hover-secondary);
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.3rem;
+  color: var(--bg-white-color);
+  margin: 1rem 0rem;
+}
+
 /* Texts */
 .decorated-gradient-tile {
-  text-transform: uppercase;
-  background-image: linear-gradient(#d94dc5, #a754df);
-  background: -webkit-linear-gradient(to bottom, #eee, #333);
+  background-image: linear-gradient(to bottom, #e453ce, #ac53dc);
+  /* background: -webkit-linear-gradient(to bottom, #eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -73,12 +97,16 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
 }
+.medium-font-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
 .section-title {
   font-size: 1.5rem;
   font-weight: 800;
 }
 .section-description {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--gray-color);
   margin: 0.5rem 0rem;
 }
@@ -98,7 +126,7 @@ body {
 }
 .uppercase-normal {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 .capitalize-text {
@@ -109,8 +137,17 @@ body {
   margin: 0.5rem 0rem;
   color: var(--gray-color);
 }
-.hide {
-  display: none;
+.small-text-white {
+  font-size: 0.8rem;
+  margin: 0.5rem 0rem;
+  color: var(--bg-white-color);
+}
+.small-text-weight {
+  font-weight: 700;
+}
+.small {
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
 }
 
 /* Header section styles begin
@@ -191,9 +228,10 @@ body {
   width: 50%;
   background-image: url("../images/Group 14.png");
   background-repeat: no-repeat;
-  object-fit: cover;
+  /* object-fit: cover; */
   background-position: center;
-  height: auto;
+  height: 100%;
+  background-size: cover;
 }
 .banner-image img {
   width: 64%;
@@ -214,7 +252,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 6rem 15rem;
+  padding: 3rem 15rem;
 }
 .gamer-text,
 .gamer-image {
@@ -230,7 +268,7 @@ body {
 
 /* Online games section styles begin */
 .online-games {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .videos {
   margin: 1.5rem 15rem;
@@ -243,13 +281,189 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
 /* Play instantly section styles begin */
+.play-instantly {
+  margin: 3rem 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+.play-text-box,
+.play-image-box {
+  width: 50%;
+}
+.play-text-box {
+  text-align: right;
+}
+.play-image-box {
+  position: relative;
+}
+.play-image-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.over-lapper-image {
+  width: 45%;
+  object-fit: cover;
+  position: absolute;
+  top: 58%;
+  left: -24%;
+}
 
 /*  Play games online section styles begin */
+.play-games-online {
+  margin: 6.5rem 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+.play-online-image-box,
+.play-games-online-text-box {
+  width: 50%;
+}
+.play-online-image-box {
+  position: relative;
+}
+.play-online-image-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.play-online-over-lapper-image {
+  width: 45%;
+  object-fit: cover;
+  position: absolute;
+  top: 53%;
+  right: -22%;
+}
+.play-games-online-text-box {
+  text-align: left;
+}
 
 /* Careers section styles begin */
+.careers {
+  padding: 3rem 15rem;
+  background-color: var(--career-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.career-text-box,
+.career-image-box {
+  width: 50%;
+}
+.career-text-box {
+  background-image: url("../images/Group 14.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  color: #fff;
+}
+.career-image-box img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  background-size: cover;
+}
+.job-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.country {
+  text-align: right;
+}
 
 /* Gaming category links section styles begin */
+.gaming-category-links {
+  background-color: #fff9fc;
+  padding: 3rem 15rem;
+}
+.link-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+  row-gap: 1rem;
+}
+.box-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 0.2rem;
+}
+
+.box-wrapper:hover {
+  border: 0.1rem solid var(--primary-color);
+  padding: 0.2rem;
+}
+.link-image {
+  width: 25%;
+  object-fit: cover;
+}
 
 /* Footer section styles begin
 =============================== */
+footer {
+  background-color: #0b0223;
+  padding: 3rem 15rem;
+}
+.footer-logo-text {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.social-links {
+  margin: 0rem 25rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: #fff;
+}
+.links ul {
+  list-style: none;
+}
+.links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0rem 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1rem 0rem;
+  column-gap: 0rem;
+  text-align: center;
+}
+.social-links a {
+  color: #fff;
+  padding: 0rem;
+}
+.fa-social-links {
+  font-size: 1.5rem;
+  margin: 1rem 1rem;
+}
+
+.copyright {
+  margin: 1.5rem 0rem;
+}
