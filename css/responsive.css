@@ -139,15 +139,23 @@
   footer {
     padding: 0.5rem;
   }
-  .social-links {
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 0.5rem;
-    color: #fff;
-  }
   .links {
+    padding: 0rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    width: 100%;
+    /* gap: 0.5rem; */
+  }
+  .links a {
+    text-decoration: none;
+    padding: 0rem;
+    font-size: 0.5rem;
+  }
+  .social-links {
+    padding: 0rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem;
+  }
+  .important-links {
+    padding: 0rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

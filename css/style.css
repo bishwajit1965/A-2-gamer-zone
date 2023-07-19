@@ -399,6 +399,7 @@ body {
 .box-wrapper:hover {
   border: 0.1rem solid var(--primary-color);
   padding: 0.2rem;
+  color: var(--primary-color);
 }
 .link-image {
   width: 25%;
@@ -409,7 +410,7 @@ body {
 =============================== */
 footer {
   background-color: #0b0223;
-  padding: 3rem 15rem;
+  padding: 3rem 14rem;
 }
 .footer-logo-text {
   margin-bottom: 2rem;
@@ -417,53 +418,48 @@ footer {
   justify-content: center;
   color: #fff;
 }
-.social-links {
-  margin: 0rem 25rem;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  justify-content: space-evenly;
-  align-items: center;
-  color: #fff;
-}
 .links {
+  padding: 0rem 14rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+  gap: 1rem;
   color: #fff;
-}
-.links ul {
-  list-style: none;
-}
-.links a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0rem 1rem;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  list-style: none;
-}
-.social-links {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  padding: 1rem 0rem;
-  column-gap: 0rem;
   text-align: center;
 }
-.social-links a {
+.small-link-text {
+  font-size: 0.7rem;
   color: #fff;
-  padding: 0rem;
+  margin: 0.5rem 0rem;
+}
+.social-links {
+  padding: 0rem 18rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.important-links {
+  padding: 0rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.links a,
+.social-links a,
+.important-links a {
+  text-decoration: none;
+  color: #fff;
 }
 .fa-social-links {
   font-size: 1.5rem;
   margin: 1rem 1rem;
 }
-
 .copyright {
   margin: 1.5rem 0rem;
 }
