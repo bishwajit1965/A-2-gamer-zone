@@ -318,7 +318,7 @@ body {
 .video-box:hover .overlay {
   opacity: 1;
 }
-.decorated-text {
+.decorated-text-style {
   color: #fff;
   padding-left: 0.5rem;
 }

@@ -23,6 +23,38 @@
     padding: 0.5rem;
   }
 }
+
+/* Navigation media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .navigation {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+  .nav-links ul li {
+    margin: 0.8rem;
+  }
+  .link-div {
+    display: flex;
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .banner-text,
+  .banner-image,
+  .banner-image img {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
 /* Gamer media queries for smaller device */
 @media screen and (max-width: 576px) {
   .gamer {
@@ -42,6 +74,29 @@
   }
 }
 
+/* Gamer media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .gamer {
+    background-color: #fff9fc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0.5rem;
+  }
+  .gamer-text,
+  .gamer-image {
+    width: 50%;
+  }
+  .gamer-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .gamer-text {
+    text-align: left;
+  }
+}
+
 /* Online games media queries for smaller device */
 @media screen and (max-width: 576px) {
   .videos {
@@ -51,6 +106,21 @@
   }
   .online-games {
     margin-top: 1rem;
+  }
+}
+
+/* Online games media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .videos {
+    margin: 1.5rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .video-box img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -79,6 +149,21 @@
   }
 }
 
+/*Play instantly media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .play-games-online {
+    margin: 3rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+  }
+  .play-online-image-box,
+  .play-games-online-text-box {
+    width: 50%;
+  }
+}
+
 /* Play games online media queries for smaller device */
 @media screen and (max-width: 576px) {
   .play-games-online {
@@ -104,6 +189,24 @@
   }
 }
 
+/* Play games online media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .play-instantly {
+    margin: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+  }
+  .play-text-box,
+  .play-image-box {
+    width: 50%;
+  }
+  .play-text-box {
+    text-align: right;
+  }
+}
+
 /* Careers section media queries for smaller device */
 @media screen and (max-width: 576px) {
   .careers {
@@ -117,6 +220,22 @@
   .career-text-box,
   .career-image-box {
     width: 100%;
+  }
+}
+
+/* Careers section media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .careers {
+    padding: 3rem 0.5rem;
+    background-color: var(--career-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .career-text-box,
+  .career-image-box {
+    width: 50%;
   }
 }
 
@@ -134,7 +253,15 @@
   }
 }
 
-/* Footer */
+/* Gaming category section media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .gaming-category-links {
+    background-color: #fff9fc;
+    padding: 3rem 0.5rem;
+  }
+}
+
+/* Footer section media queries for smaller device */
 @media screen and (max-width: 576px) {
   footer {
     padding: 0.5rem;
@@ -157,5 +284,22 @@
   .important-links {
     padding: 0rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Footer section media queries for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  footer {
+    background-color: #0b0223;
+    padding: 3rem 0.5rem;
+  }
+  .links {
+    padding: 0rem 8rem;
+  }
+  .social-links {
+    padding: 0rem 12rem;
+  }
+  .important-links {
+    padding: 0rem 10rem;
   }
 }
